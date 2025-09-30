@@ -1,0 +1,176 @@
+/* ----------- DISPLAY ----------- */
+.display-block,
+.display-inline,
+.display-inline-block {
+    color: #fff; 
+    font-weight: bold; 
+    border-radius: 6px; 
+    margin: 1px;
+}
+
+.display-block {
+    display: block; 
+    background: #f44336; 
+    padding: 10px; 
+    text-align: center;
+}
+.display-inline {
+    display: inline; 
+    background: #76c7c0; 
+    padding: 5px 10px;
+}
+.display-inline-block {
+    display: inline-block; 
+    background: #009688; 
+    padding: 5px 10px; 
+    text-align: center;
+}
+.display-none { 
+    display: none; 
+    background: #795548; 
+}
+
+/* ----------- OVERFLOW ----------- */
+.overflow-visible { overflow: visible; }
+.overflow-hidden { overflow: hidden; }
+.overflow-scroll { overflow: scroll; }
+.overflow-auto { overflow: auto; }
+
+/* ----------- FLEXBOX ----------- */
+.flex-container {
+    display: flex; 
+    gap: 10px; 
+    background: #f57c00;
+    border: 2px solid #ddee2d; 
+    border-radius: 8px; 
+    margin: 15px 0;
+}
+.flex-item {
+    flex: 1; 
+    padding: 15px; 
+    text-align: center;
+    border-radius: 15px; 
+    font-weight: bold; 
+    background: #00796b; 
+    color: #fff;
+}
+.flex-direction-column {
+    flex-direction: column;
+}
+.justify-content {
+    justify-content: space-between;
+}
+
+/* FLEXBOX LAYOUT */
+.flex-column {
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+    margin: 20px 0;
+}
+
+/* ----------- FLOAT ----------- */
+.float-left, .float-right {
+    float: left; 
+    width: 45%; 
+    margin: 10px; 
+    border-radius: 6px; 
+    text-align: center;
+    padding: 15px; 
+    background: #ff5722; 
+    color: #fff;
+}
+.float-right { 
+    float: right; 
+    background: #2196f3; 
+    margin: 0 10px; 
+}
+
+/* ----------- POSITION ----------- */
+.position-box {
+    position: relative; 
+    width: 250px; 
+    height: 200px;
+    background: #4caf50; 
+    border-radius: 6px; 
+    color: #fff; 
+    padding: 20px;
+}
+.absolute {
+    position: absolute; 
+    top: 20px; 
+    left: 20px;
+    background: #e91e63; 
+    padding: 10px; 
+    border-radius: 4px;
+}
+.relative {
+    position: relative; 
+    top: 10px; 
+    left: 10px;
+    background: #9c27b0; 
+    padding: 10px; 
+    border-radius: 4px;
+}
+.fixed {
+    position: fixed; 
+    bottom: 10px; 
+    right: 10px;
+    background: #3f51b5; 
+    padding: 10px; 
+    border-radius: 4px;
+}
+.sticky {
+    position: sticky; 
+    top: 0;
+    background: #ff9800; 
+    padding: 10px; 
+    border: 1px solid #ddd;
+}
+
+/* ----------- LAYOUT & COLUMNS ----------- */
+.column, .column-left, .column-right {
+    flex: 1; 
+    padding: 20px; 
+    border-radius: 8px;
+    border: 1px solid #d0e2e6; 
+    background: #fff;
+}
+.column-left { background: #a8d5ba; }
+.column-right { background: #ffd59e; }
+.column:nth-child(2) { background: #d5a8f7; }
+.column:nth-child(3) { background: #f7a8a8; }
+
+.page-layout {
+    background: #fff; 
+    border-radius: 8px; 
+    border: 1px solid #d0e2e6; 
+    overflow: hidden;
+}
+.page-header, .page-footer {
+    text-align: center; 
+    padding: 15px;
+}
+.page-header { background: #a8d5ba; }
+.page-footer { 
+    background: #d5a8f7; 
+    font-size: 14px; 
+}
+.page-content { 
+    background: #ffd59e; 
+    padding: 30px; 
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 768px) {
+    .column, .three-column { 
+        flex-direction: column; 
+    }
+    .position-fixed { 
+        position: static; 
+        margin: 10px 0; 
+    }
+    body { 
+        margin: 10px; 
+    }
+}
